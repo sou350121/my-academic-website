@@ -1,0 +1,330 @@
+/* ===== 基礎重置和變數設定 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* 色彩變數 - 學術風格的色調 */
+    --primary-color: #2c3e50;      /* 深藍灰色 */
+    --secondary-color: #34495e;    /* 中藍灰色 */
+    --accent-color: #3498db;       /* 學術藍色 */
+    --text-color: #333333;         /* 深灰色文字 */
+    --light-text: #666666;         /* 淺灰色文字 */
+    --background: #ffffff;         /* 白色背景 */
+    --light-background: #f8f9fa;   /* 淺灰色背景 */
+    --border-color: #e9ecef;       /* 邊框顏色 */
+    
+    /* 字體變數 */
+    --main-font: 'Crimson Text', 'Times New Roman', serif;
+    --heading-font: 'Crimson Text', 'Times New Roman', serif;
+    
+    /* 間距變數 */
+    --section-padding: 80px 0;
+    --container-padding: 0 20px;
+}
+
+/* ===== 基礎樣式 ===== */
+body {
+    font-family: var(--main-font);
+    line-height: 1.6;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--container-padding);
+}
+
+/* ===== 導航列 ===== */
+header {
+    background: var(--background);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav li {
+    margin: 0 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* ===== 主要區塊樣式 ===== */
+main {
+    margin-top: 80px; /* 為固定導航列留空間 */
+}
+
+.section {
+    padding: var(--section-padding);
+}
+
+.bg-light {
+    background-color: var(--light-background);
+}
+
+/* ===== 標題樣式 ===== */
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* 為h2添加裝飾線 */
+h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    display: block;
+    margin: 15px auto;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    margin: 25px 0 15px 0;
+}
+
+/* ===== 首頁英雄區塊 ===== */
+.hero {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--background);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-text h2 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.hero-text h2::after {
+    display: none; /* 移除裝飾線 */
+}
+
+.affiliation {
+    font-size: 1.2em;
+    color: var(--light-text);
+    margin-bottom: 5px;
+}
+
+.position {
+    font-size: 1.1em;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* ===== 研究區域樣式 ===== */
+.research-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.research-item {
+    background: var(--background);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.research-item:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== 列表樣式 ===== */
+.publications-list {
+    margin-bottom: 30px;
+}
+
+.publications-list li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--background);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 8px 8px 0;
+}
+
+.project-list, .course-list, .cv-list {
+    list-style: none;
+}
+
+.project-list li, .course-list li, .cv-list li {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    background: var(--background);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ===== 聯絡資訊樣式 ===== */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    background: var(--background);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+}
+
+/* ===== 連結樣式 ===== */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.doi {
+    font-size: 0.9em;
+    color: var(--light-text);
+}
+
+/* ===== 頁尾 ===== */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* ===== 響應式設計 ===== */
+@media (max-width: 768px) {
+    /* 手機版樣式調整 */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* ===== 平滑滾動效果 ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== 發表論文的特殊樣式 ===== */
+.authors {
+    font-weight: 600;
+}
+
+.title {
+    color: var(--secondary-color);
+}
+
+.journal {
+    color: var(--accent-color);
+}
+
+.year {
+    font-weight: 600;
+    color: var(--primary-color);
+}
