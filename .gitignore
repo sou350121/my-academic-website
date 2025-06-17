@@ -1,0 +1,21 @@
+# 作業系統產生的檔案
+.DS_Store
+Thumbs.db
+
+# 編輯器設定檔
+.vscode/
+.idea/
+
+# 暫存檔案
+*.tmp
+*.temp
+
+# 日誌檔案
+*.log
+
+# Node modules (如果之後使用)
+node_modules/
+
+# 建置輸出 (如果之後使用)
+dist/
+build/
