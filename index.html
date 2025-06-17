@@ -3,37 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. [Your Name] - Academic Portfolio</title>
+    <title>Sou - Academic Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="cursor-follower"></div>
+    <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">Sou</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#research" class="nav-link">Research</a></li>
+                    <li><a href="#publications" class="nav-link">Publications</a></li>
+                    <li><a href="#teaching" class="nav-link">Teaching</a></li>
+                    <li><a href="#cv" class="nav-link">CV</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
             <div class="container">
                 <div class="hero-content">
-                    <div class="profile-image">
-                        <img src="profile-photo.jpg" alt="Profile Photo" />
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <img src="profile-photo.jpg" alt="Profile Photo" />
+                            <div class="profile-overlay"></div>
+                        </div>
+                        <div class="profile-decoration"></div>
                     </div>
                     <div class="hero-text">
-                        <h1>Dr. [Your Full Name]</h1>
-                        <h2>PhD in [Your Field]</h2>
-                        <p class="affiliation">[Department Name] | [University Name]</p>
-                        <p class="position">[Your Position/Title]</p>
+                        <h1 class="typing-effect">Sou</h1>
+                        <h2>PhD in Data Science and Information Technology</h2>
+                        <p class="affiliation">
+                            <i class="fas fa-university"></i>
+                            Institute of Data and Information | Tsinghua University
+                        </p>
+                        <p class="position">PhD Candidate</p>
+                        <div class="hero-buttons">
+                            <a href="#research" class="btn btn-primary">
+                                <span>Explore Research</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Get in Touch</span>
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,148 +86,423 @@
         <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
-                <h2>About</h2>
-                <p>I am a [Your Position] at [University/Institution] specializing in [Your Research Area]. My research focuses on [brief description of your research interests]. I received my PhD in [Field] from [University] in [Year], where I worked under the supervision of [Advisor Name].</p>
-                
-                <p>My work lies at the intersection of [Field 1], [Field 2], and [Field 3], with particular emphasis on [specific focus area]. I am passionate about [research passion/motivation] and its applications to [real-world applications].</p>
+                <div class="section-header">
+                    <h2 class="section-title">About Me (This website is just for testings)</h2>
+                    <div class="section-subtitle">Bridging Data Science and Real-World Applications</div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">I am currently a PhD Candidate at Tsinghua University, specializing in Data Science and Information Technology. My research interests include machine learning, robotics, and visual sensing, with a focus on developing intelligent systems for real-world applications.</p>
+                        
+                        <p>My work explores the intersection of robotics and visual perception, particularly in the area of robust sensor fusion for autonomous systems. I am passionate about advancing human-robot interaction and enabling robots to better understand and interact with complex environments.</p>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Robotics</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Computer Vision</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="research-timeline">
+                            <div class="timeline-item active">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>PhD - Tsinghua University</h4>
+                                    <span>2022 - Present</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Master's - Tsinghua University</h4>
+                                    <span>2020 - 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Research Section -->
         <section id="research" class="section bg-light">
             <div class="container">
-                <h2>Research Interests</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Research Interests</h2>
+                    <div class="section-subtitle">Exploring the Future of Intelligent Systems</div>
+                </div>
                 <div class="research-areas">
-                    <div class="research-item">
-                        <h3>[Research Area 1]</h3>
-                        <p>Brief description of this research area and your contributions.</p>
+                    <div class="research-item" data-tilt>
+                        <div class="research-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visual and Tactile Sensing</h3>
+                        <p>Exploring computer vision physical sensing techniques for real-time scene understanding and object detection in dynamic environments. I focus on multi-modal data integration and improving the reliability of visual systems in challenging conditions.</p>
+                        <div class="research-tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">SLAM</span>
+                        </div>
                     </div>
-                    <div class="research-item">
-                        <h3>[Research Area 2]</h3>
-                        <p>Brief description of this research area and your contributions.</p>
+                    <div class="research-item" data-tilt>
+                        <div class="research-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Human-Robot Interaction</h3>
+                        <p>Investigating intuitive and safe interaction mechanisms between humans and robots. My contributions include designing user-centric interfaces and developing algorithms that enable robots to interpret and respond to human intentions effectively.</p>
+                        <div class="research-tech">
+                            <span class="tech-tag">ROS</span>
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">Arduino</span>
+                        </div>
                     </div>
-                    <div class="research-item">
-                        <h3>[Research Area 3]</h3>
-                        <p>Brief description of this research area and your contributions.</p>
+                    <div class="research-item" data-tilt>
+                        <div class="research-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Sensing System Algorithms</h3>
+                        <p>Developing and applying advanced algorithms tailored for sensing systems to enhance robotic perception, decision-making, and adaptability. My work includes robust sensor fusion, deep learning for visual recognition, and reinforcement learning for autonomous navigation.</p>
+                        <div class="research-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Kalman Filter</span>
+                            <span class="tech-tag">RL</span>
+                        </div>
                     </div>
                 </div>
 
-                <h3>Current Projects</h3>
-                <ul class="project-list">
-                    <li><strong>[Project Title 1]</strong> - Brief description of the project and funding source if applicable.</li>
-                    <li><strong>[Project Title 2]</strong> - Brief description of the project and funding source if applicable.</li>
-                </ul>
+                <div class="current-projects">
+                    <h3>Current Projects</h3>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <div class="project-status">Ongoing</div>
+                            <h4>Tactile Sensing System in Complex Environments</h4>
+                            <p>Developing robust navigation algorithms for mobile robots in dynamic indoor environments using multi-sensor fusion.</p>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <span>75% Complete</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-status funding">Funded</div>
+                            <h4>Visual-Tactile Sensor Integration</h4>
+                            <p>Research on combining visual and tactile sensing for improved object manipulation in robotic systems.</p>
+                            <div class="project-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%"></div>
+                                </div>
+                                <span>45% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Publications Section -->
         <section id="publications" class="section">
             <div class="container">
-                <h2>Selected Publications</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Publications</h2>
+                    <div class="section-subtitle">Contributing to Scientific Knowledge</div>
+                </div>
                 
-                <h3>Journal Articles</h3>
-                <ol class="publications-list">
-                    <li>
-                        <span class="authors">[Author names]</span> (<span class="year">Year</span>). 
-                        <span class="title">"Article Title"</span> 
-                        <span class="journal"><em>Journal Name</em></span>, 
-                        <span class="volume">Volume(Issue)</span>, pages. 
-                        <a href="#" class="doi">DOI: xx.xxxx/xxxxx</a>
-                    </li>
-                    <!-- Add more publications as needed -->
-                </ol>
+                <div class="publication-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="journal">Journal Articles</button>
+                    <button class="filter-btn" data-filter="conference">Conference Papers</button>
+                </div>
 
-                <h3>Conference Proceedings</h3>
-                <ol class="publications-list">
-                    <li>
-                        <span class="authors">[Author names]</span> (<span class="year">Year</span>). 
-                        <span class="title">"Conference Paper Title"</span> 
-                        In <span class="conference"><em>Conference Name</em></span>, 
-                        <span class="location">Location</span>.
-                    </li>
-                </ol>
+                <div class="publications-container">
+                    <div class="publication-item journal" data-category="journal">
+                        <div class="publication-type">
+                            <i class="fas fa-book"></i>
+                            <span>Journal Article</span>
+                        </div>
+                        <div class="publication-content">
+                            <h4 class="publication-title">"Multi-Modal Sensor Fusion for Robust Robot Navigation"</h4>
+                            <div class="publication-authors">Sou, L., Wang, J., Chen, M., Li, X.</div>
+                            <div class="publication-details">
+                                <span class="journal-name">IEEE Transactions on Robotics</span>
+                                <span class="publication-year">2024</span>
+                                <span class="citation-count">
+                                    <i class="fas fa-quote-right"></i>
+                                    23 citations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="action-btn"><i class="fas fa-file-pdf"></i></a>
+                            <a href="#" class="action-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
 
-                <p><a href="[Google Scholar Link]" target="_blank">View full publication list on Google Scholar</a></p>
+                    <div class="publication-item conference" data-category="conference">
+                        <div class="publication-type">
+                            <i class="fas fa-users"></i>
+                            <span>Conference</span>
+                        </div>
+                        <div class="publication-content">
+                            <h4 class="publication-title">"Real-Time Visual SLAM with Deep Learning Integration"</h4>
+                            <div class="publication-authors">Sou, L., Zhang, Y., Wang, L.</div>
+                            <div class="publication-details">
+                                <span class="conference-name">IEEE International Conference on Robotics and Automation (ICRA)</span>
+                                <span class="publication-year">2023</span>
+                                <span class="citation-count">
+                                    <i class="fas fa-quote-right"></i>
+                                    15 citations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="publication-actions">
+                            <a href="#" class="action-btn"><i class="fas fa-file-pdf"></i></a>
+                            <a href="#" class="action-btn"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">102</div>
+                        <div class="stat-label">Citations</div>
+                    </div>
+                </div>
+
+                <div class="external-profiles">
+                    <a href="#" class="profile-link">
+                        <i class="fab fa-google"></i>
+                        <span>Google Scholar</span>
+                    </a>
+                    <a href="#" class="profile-link">
+                        <i class="fab fa-orcid"></i>
+                        <span>ORCID</span>
+                    </a>
+                    <a href="#" class="profile-link">
+                        <i class="fab fa-researchgate"></i>
+                        <span>ResearchGate</span>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Teaching Section -->
         <section id="teaching" class="section bg-light">
             <div class="container">
-                <h2>Teaching</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Teaching</h2>
+                    <div class="section-subtitle">Sharing Knowledge and Inspiring Students</div>
+                </div>
                 
-                <h3>Courses Taught</h3>
-                <ul class="course-list">
-                    <li><strong>[Course Code]: [Course Title]</strong> - [Semester, Year] - [Institution]</li>
-                    <li><strong>[Course Code]: [Course Title]</strong> - [Semester, Year] - [Institution]</li>
-                </ul>
+                <div class="teaching-content">
+                    <div class="courses-section">
+                        <h3>Courses Taught</h3>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <div class="course-header">
+                                    <h4>CS501: Introduction to Machine Learning</h4>
+                                    <span class="course-term">Fall 2023</span>
+                                </div>
+                                <div class="course-details">
+                                    <span class="course-level">Graduate Level</span>
+                                    <span class="course-students">32 students</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="course-item">
+                                <div class="course-header">
+                                    <h4>CS302: Computer Vision Fundamentals</h4>
+                                    <span class="course-term">Spring 2023</span>
+                                </div>
+                                <div class="course-details">
+                                    <span class="course-level">Undergraduate</span>
+                                    <span class="course-students">45 students</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <h3>Teaching Philosophy</h3>
-                <p>Brief statement about your approach to teaching and mentoring students.</p>
+                    <div class="philosophy-section">
+                        <h3>Teaching Philosophy</h3>
+                        <div class="philosophy-card">
+                            <div class="philosophy-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <p>I believe in creating an interactive and inclusive learning environment where students are encouraged to explore, question, and innovate. My approach combines theoretical foundations with hands-on practical applications, ensuring students can bridge the gap between academia and real-world problem-solving.</p>
+                            <div class="philosophy-principles">
+                                <div class="principle">
+                                    <i class="fas fa-users"></i>
+                                    <span>Collaborative Learning</span>
+                                </div>
+                                <div class="principle">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>Project-Based Teaching</span>
+                                </div>
+                                <div class="principle">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Mentorship Focus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- CV Section -->
         <section id="cv" class="section">
             <div class="container">
-                <h2>Curriculum Vitae</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Curriculum Vitae</h2>
+                    <div class="section-subtitle">Academic and Professional Journey</div>
+                </div>
                 
-                <h3>Education</h3>
-                <ul class="cv-list">
-                    <li><strong>PhD in [Field]</strong>, [University], [Year]
-                        <br>Dissertation: "[Dissertation Title]"
-                        <br>Advisor: [Advisor Name]
-                    </li>
-                    <li><strong>[Master's Degree]</strong>, [University], [Year]</li>
-                    <li><strong>[Bachelor's Degree]</strong>, [University], [Year]</li>
-                </ul>
+                <div class="cv-content">
+                    <div class="cv-section">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>PhD in Data Science and Information Technology</h4>
+                                    <div class="institution">Tsinghua University</div>
+                                    <div class="timeline-period">2022 - Present</div>
+                                    <div class="timeline-details">
+                                        <p>Dissertation: "Advanced Sensor Fusion Techniques for Autonomous Robot Navigation"</p>
+                                        <p>Advisor: Prof. __</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Master in Data Science and Information Technology</h4>
+                                    <div class="institution">Tsinghua University</div>
+                                    <div class="timeline-period">2018 - 2021</div>
+                                    <div class="timeline-details">
+                                        <p>Advisor: Prof. __</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <h3>Professional Experience</h3>
-                <ul class="cv-list">
-                    <li><strong>[Position Title]</strong>, [Institution], [Start Year - End Year/Present]</li>
-                    <li><strong>[Position Title]</strong>, [Institution], [Start Year - End Year]</li>
-                </ul>
+                    <div class="cv-section">
+                        <h3>Professional Experience</h3>
+                        <div class="experience-list">
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h4>Research Assistant</h4>
+                                    <span class="experience-period">2022 - Present</span>
+                                </div>
+                                <div class="experience-company">Tsinghua University</div>
+                            </div>
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h4>Teaching Assistant</h4>
+                                    <span class="experience-period">2021 - 2022</span>
+                                </div>
+                                <div class="experience-company">Tsinghua University</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <h3>Awards & Honors</h3>
-                <ul class="cv-list">
-                    <li>[Award Name], [Institution/Organization], [Year]</li>
-                    <li>[Award Name], [Institution/Organization], [Year]</li>
-                </ul>
-
-                <p><a href="cv.pdf" target="_blank">Download Full CV (PDF)</a></p>
+                <div class="cv-download">
+                    <a href="cv.pdf" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        <span>Download Full CV</span>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section bg-light">
             <div class="container">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Office</h3>
-                        <p>[Building Name], Room [Number]<br>
-                        [Department Name]<br>
-                        [University Name]<br>
-                        [Address]</p>
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="section-subtitle">Let's Collaborate and Innovate Together</div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:sujh21@mails.tsinghua.edu.cn">sujh21@mails.tsinghua.edu.cn</a>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p><a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <h3>Office Hours</h3>
-                        <p>[Days and Times]<br>
-                        or by appointment</p>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
                 
                 <div class="social-links">
-                    <a href="[ORCID URL]" target="_blank">ORCID</a>
-                    <a href="[Google Scholar URL]" target="_blank">Google Scholar</a>
-                    <a href="[ResearchGate URL]" target="_blank">ResearchGate</a>
-                    <a href="[LinkedIn URL]" target="_blank">LinkedIn</a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-orcid"></i>
+                        <span>ORCID</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-google"></i>
+                        <span>Google Scholar</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-researchgate"></i>
+                        <span>ResearchGate</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -191,7 +510,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2025 Dr. Sou. All rights reserved. | Designed with passion for science and innovation.</p>
         </div>
     </footer>
 
